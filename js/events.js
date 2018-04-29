@@ -14,8 +14,16 @@ function frameIt() {
 function pressIt() {
   $("input").on("keydown", function() {
     const key = parseInt(e.which || e.detail);
-    if ( e.which === )
-  })
+    if ( key === 71) {
+      alert("You pressed G.");
+    }
+  });
+}
+
+function submitIt() {
+  $("form").on("submit", function() {
+    alert("Your form is going to be submitted now.");
+  });
 }
 
 $(document).ready(function(){
